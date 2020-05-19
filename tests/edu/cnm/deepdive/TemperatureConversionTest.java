@@ -14,27 +14,27 @@ class TemperatureConversionTest {
   void convertC2FScalar() {
     for (int i = 0; i < celsiusTemperatures.length; i++) {
       assertEquals(fahrenheitTemperatures[i],
-          TemperatureConversion.convertC2F(celsiusTemperatures[i]),TOLERANCE);
+          TemperatureConversion.convertC2F(celsiusTemperatures[i]), TOLERANCE);
     }
   }
 
   @Test
-    void convertF2CScalar() {
+  void convertF2CScalar() {
     for (int i = 0; i < fahrenheitTemperatures.length; i++) {
       assertEquals(celsiusTemperatures[i],
-          TemperatureConversion.convertF2C(fahrenheitTemperatures[i]),TOLERANCE);
+          TemperatureConversion.convertF2C(fahrenheitTemperatures[i]), TOLERANCE);
     }
   }
 
   @Test
   void convertC2FArray() {
     assertArrayEquals(fahrenheitTemperatures,
-        TemperatureConversion.convertC2F(celsiusTemperatures),TOLERANCE);
+        TemperatureConversion.convertC2F(celsiusTemperatures), TOLERANCE);
   }
 
   @Test
   void convertF2CArray() {
     assertArrayEquals(celsiusTemperatures,
-        TemperatureConversion.convertF2C(fahrenheitTemperatures),TOLERANCE);
+        TemperatureConversion.convertF2C(fahrenheitTemperatures), TOLERANCE);
   }
 }
