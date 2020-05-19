@@ -19,7 +19,7 @@ class TemperatureConversionTest {
   }
 
   @Test
-  void convertF2CScalar() {
+    void convertF2CScalar() {
     for (int i = 0; i < fahrenheitTemperatures.length; i++) {
       assertEquals(celsiusTemperatures[i],
           TemperatureConversion.convertF2C(fahrenheitTemperatures[i]),TOLERANCE);
